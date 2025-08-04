@@ -1,0 +1,147 @@
+.my-container {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.hamburger-icon {
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(15, 15, 36);
+    width: 100%;
+  
+}
+
+.logo {
+    color: white;
+    font-size: 0.5rem;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.right_img {
+    border: 2px solid white;
+    padding: 1em;
+    border-style: dashed;;
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 10px;
+    margin-top: 8px;
+    margin-right: 8px;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: rgb(7, 7, 21);
+    color: white;
+    margin-top: 2px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.cards img {
+    margin: 10px;
+    border: 2px solid rgb(8, 95, 244);
+    border-style: dashed;
+    padding: 1rem;
+    text-align: center;
+    margin: auto;
+}
+
+.cards p {
+    margin: 10px;
+}
+main h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.quoted-text {
+    font-style: italic;
+    text-align: center;
+    margin: 10px;
+    color: rgb(37, 38, 40);
+    background-color: gray;
+    padding: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2em;
+    background-color: rgb(74, 174, 255);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 13rem;
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 2em;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+
+    #card-item1,#card-item2, #card-item3,#card-item4 {
+       display: flex;
+       flex-direction: column;
+         align-items: center;
+
+    }
+
+    .left-text {
+        text-align: center;
+    }
+    
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em; 
+    }
+
+    .hamburger-icon {
+        display: inline-block;
+        margin-right: 1em;
+        background-color: gray;
+        margin: 1em;
+        border-radius: 10px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+
+}
+
+
